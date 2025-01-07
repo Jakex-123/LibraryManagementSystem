@@ -108,7 +108,7 @@ const AllBooks = () => {
       author: book?.author,
     });
   }
-  function handleDelete(id) {
+  async function handleDelete(id) {
     await deleteBook(id);
     fetchData()
   }
