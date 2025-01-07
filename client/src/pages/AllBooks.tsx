@@ -109,7 +109,8 @@ const AllBooks = () => {
     });
   }
   function handleDelete(id) {
-    deleteBook(id);
+    await deleteBook(id);
+    fetchData()
   }
 
   return (
