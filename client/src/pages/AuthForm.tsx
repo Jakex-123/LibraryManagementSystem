@@ -46,7 +46,9 @@ const AuthForm = () => {
       else{
         showToast('Login successful','success')
       }
-      login(access_token);
+      if(type=='login'){
+        login(access_token);
+      }
     } catch (error) {
       console.error(error)
       showToast('Authentication failed. Please try again.','error')
