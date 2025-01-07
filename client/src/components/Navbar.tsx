@@ -31,7 +31,7 @@ const Navbar = ({type}) => {
               className="flex items-center text-sm font-medium hover:text-primary"
             >
               <Users className="mr-2 h-4 w-4" />
-              Borrowed Books Users
+              Borrowers
             </a>}
           </div>
 
@@ -62,7 +62,7 @@ const Navbar = ({type}) => {
                   className="flex items-center text-sm font-medium hover:text-primary"
                 >
                   <Users className="mr-2 h-4 w-4" />
-                  Borrowed Books Users
+                  Borrowers
                 </a>
               </div>
             </SheetContent>
