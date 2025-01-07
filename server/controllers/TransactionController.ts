@@ -2,8 +2,8 @@
 
 import type { Request, Response } from "express";
 import { Book } from "../models/bbooks";
-import { Transaction } from "../models/transactions";
-import { User } from "../models/users";  // Import User model
+import { Transaction } from "../models/ttransactions";
+import { User } from "../models/uusers";  // Import User model
 
 class TransactionController {
   static async borrowBook(req: Request, res: Response) {

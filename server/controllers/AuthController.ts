@@ -3,7 +3,7 @@
 import { ConnectDB } from "../db/db";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
-import { User } from "../models/users";
+import { User } from "../models/uusers";
 
 export default class AuthController {
   static async signupUser(req: Request, res: Response) {

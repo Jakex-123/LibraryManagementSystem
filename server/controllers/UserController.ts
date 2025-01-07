@@ -1,6 +1,6 @@
 //@ts-nocheck
 
-import { User } from "../models/users";
+import { User } from "../models/uusers";
 
 class UserController {
     static async getUsers(req, res) {
