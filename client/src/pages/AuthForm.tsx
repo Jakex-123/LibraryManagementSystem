@@ -20,8 +20,12 @@ const AuthForm = () => {
 
   useEffect(() => {
     if (localStorage.getItem('token') !== null) {
-    if(auth?.role=='admin') navigate('/booksall')
-    else navigate('/books');
+    if(auth?.role=='admin'){
+      navigate('/booksall')
+    }
+    else{
+      navigate('/books');
+    }
     }
   }, [navigate,auth]);
 
@@ -36,8 +40,12 @@ const AuthForm = () => {
       const VITE_APIURL = type === 'login' ? `${import.meta.env.VITE_APIURL}/api/v1/auth/login` : `${import.meta.env.VITE_APIURL}/api/v1/auth/signup`;
       const response = await axios.post(VITE_APIURL, formFields);
       const { access_token } = response.data;
-      if(type==='signup')showToast(`Signup successful! Please Login`,'success')
-        else showToast('Login successful','success')
+      if(type==='signup'){
+        showToast(`Signup successful! Please Login`,'success')
+      }
+      else{
+        showToast('Login successful','success')
+      }
       login(access_token);
     } catch (error) {
       console.error(error)
