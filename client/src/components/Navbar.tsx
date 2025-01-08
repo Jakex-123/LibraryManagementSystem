@@ -7,7 +7,7 @@ const Navbar = ({type}) => {
 
   return (
     <nav className="border-b w-full bg-[#ffffffe0]">
-      <div className="mx-auto px-28">
+      <div className="mx-auto px-4 lg:px-28">
         <div className="flex items-center justify-between h-16">
           <h1 className="text-xl font-bold">{type==='admin'?'Library Dashboard':'Library'}</h1>
 

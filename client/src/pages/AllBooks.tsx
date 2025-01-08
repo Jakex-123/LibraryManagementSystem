@@ -116,7 +116,7 @@ const AllBooks = () => {
   return (
     <div className="w-full flex flex-col items-start relative bg-[#dfdfdf3f]">
       <Navbar type={auth?.role}/>
-      <div className="w-full py-6 px-28  overflow-y-auto">
+      <div className="w-full py-6 px-4 lg:px-28  overflow-y-auto">
       <div className="mb-6 relative bg-[#ffffffe0] rounded-md">
         <Search className="absolute left-2 top-2.5 h-4 w-4 text-gray-500" />
         <Input

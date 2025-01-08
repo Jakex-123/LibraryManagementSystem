@@ -72,7 +72,7 @@ const BookDetails = () => {
   }
 
   return (
-    <div className="container">
+    <div className="">
       <Navbar type={auth?.role} />
       <Card className="max-w-7xl mx-auto p-6 mt-5">
         <CardHeader>
