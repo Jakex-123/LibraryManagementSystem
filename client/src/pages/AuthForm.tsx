@@ -58,8 +58,8 @@ const AuthForm = () => {
   };
 
   return (
-    <div className="grid place-items-center h-[100vh]">
-      <Card className="w-full max-w-md mx-auto">
+    <div className=" grid place-items-center h-[100vh]">
+      <Card className="w-72 sm:w-full max-w-md mx-auto">
         <Tabs defaultValue="login" className="w-full">
           <TabsList className="grid w-full grid-cols-2">
             <TabsTrigger value="login">Login</TabsTrigger>
