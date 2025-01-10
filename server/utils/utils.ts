@@ -3,7 +3,7 @@
 export async function getBookDetails(author, title) {
   try {
     const query = `intitle:${title}+inauthor:${author}`;
-    const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(query)}`);
+    const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(query)}&key=${process.env.BOOKS_API}`);
 
     if (response.ok) {
       const data = await response.json();
