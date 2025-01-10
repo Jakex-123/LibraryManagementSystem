@@ -1,7 +1,7 @@
 //@ts-nocheck
 
 import type { Request, Response } from "express";
-import { Book } from "../models/books";
+import { Book } from "../models/bbooks";
 import { getBookDetails } from "../utils/utils";
 
 class BookController {
