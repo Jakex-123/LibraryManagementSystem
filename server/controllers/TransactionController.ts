@@ -1,8 +1,8 @@
 //@ts-nocheck
 
 import type { Request, Response } from "express";
-import { Book } from "../models/books";
-import { Transaction } from "../models/Transactions";
+import { Book } from "../models/bbooks";
+import { Transaction } from "../models/ttransactions";
 import { User } from "../models/Users";  // Import User model
 
 class TransactionController {
